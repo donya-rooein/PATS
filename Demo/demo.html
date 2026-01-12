@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogs with Personality-Aware Teaching Strategies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dialogs with Personality-Aware Teaching Strategies</h1>
+        </header>
+
+        <div class="main-content">
+            <!-- Left Panel - Search Filters -->
+            <div class="left-panel">
+                <div class="search-panel">
+                    <h2>Find Dialogs
+                        <span class="help-icon" title="How to use this demo">
+                            <i class="fas fa-question-circle"></i>
+                            <div class="help-tooltip">
+                                <div class="help-tooltip-content">
+                                    <strong>How to use this demo:</strong><br>
+                                    • Set the personality traits (High/Low) to filter dialogs<br>
+                                    • Select pedagogical strategies to find matching dialogs<br>
+                                    • Use the Search button to find dialogs matching your criteria<br>
+                                    • Navigate through filtered results using arrow buttons<br>
+                                    • Use Random to view a random dialog without filters<br>
+                                    • Use Reset to clear all filters and start over
+                                </div>
+                            </div>
+                        </span>
+                    </h2>
+                    <div class="search-section">
+                        <h3>Personality Traits</h3>
+                        <div class="trait-filters">
+                            <div class="trait">
+                                <h4>Conscientiousness</h4>
+                                <div class="trait-buttons">
+                                    <button class="trait-btn" data-trait="Conscientiousness" data-value="high">High</button>
+                                    <button class="trait-btn" data-trait="Conscientiousness" data-value="low">Low</button>
+                                </div>
+                            </div>
+                            <div class="trait">
+                                <h4>Agreeableness</h4>
+                                <div class="trait-buttons">
+                                    <button class="trait-btn" data-trait="Agreeableness" data-value="high">High</button>
+                                    <button class="trait-btn" data-trait="Agreeableness" data-value="low">Low</button>
+                                </div>
+                            </div>
+                            <div class="trait">
+                                <h4>Extraversion</h4>
+                                <div class="trait-buttons">
+                                    <button class="trait-btn" data-trait="Extraversion" data-value="high">High</button>
+                                    <button class="trait-btn" data-trait="Extraversion" data-value="low">Low</button>
+                                </div>
+                            </div>
+                            <div class="trait">
+                                <h4>Openness</h4>
+                                <div class="trait-buttons">
+                                    <button class="trait-btn" data-trait="Openness" data-value="high">High</button>
+                                    <button class="trait-btn" data-trait="Openness" data-value="low">Low</button>
+                                </div>
+                            </div>
+                            <div class="trait">
+                                <h4>Neuroticism</h4>
+                                <div class="trait-buttons">
+                                    <button class="trait-btn" data-trait="Neuroticism" data-value="high">High</button>
+                                    <button class="trait-btn" data-trait="Neuroticism" data-value="low">Low</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-section">
+                        <h3>Dialog Strategies</h3>
+                        <div class="strategy-filters">
+                            <!-- Strategy checkboxes -->
+                            <div id="strategy-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="search-buttons">
+                        <button id="search-btn">Search</button>
+                        <button id="random-btn">Random</button>
+                        <button id="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Content Display -->
+            <div class="right-panel">
+                <div id="dialogue-display">
+                    <!-- Dialog counter -->
+                    <div class="dialog-counter">
+                        <div class="dialog-number-container">
+                            <input type="number" id="dialog-number" min="1" value="1"> / <span id="total-dialogs">0</span>
+                        </div>
+                        <div class="nav-buttons">
+                            <button id="prev-dialog" class="nav-btn"><i class="fas fa-arrow-left"></i></button>
+                            <button id="next-dialog" class="nav-btn"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                        <div class="task-description">
+                            <strong>Task: </strong>
+                            <select id="task-selector">
+                                <option value="image">Image description</option>
+                                <option value="moral">Moral of stories</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="dialogue-metadata" style="display: none;"></div>
+                    
+                    <div class="image-container">
+                        <img id="dialogue-image" src="" alt="Dialogue illustration">
+                    </div>
+                    
+                    <div class="story-title-container" style="display: none;">
+                        <h2 id="story-title"></h2>
+                    </div>
+                    
+                    <div id="strategies-used">
+                        <h3>Strategies Used</h3>
+                        <ul id="strategy-list"></ul>
+                    </div>
+                    
+                    <div id="dialogue-content">
+                        <div class="dialogue-placeholder">
+                            <p>Loading dialogue content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

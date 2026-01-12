@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogs with Personality-Aware Teaching Strategies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .landing-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5e6f0 0%, #e8f0f5 50%, #f0f5e8 100%);
+            padding: 1.71rem;
+            text-align: center;
+        }
+
+        .landing-content {
+            max-width: 855px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 2.565rem;
+            border-radius: 17.1px;
+            box-shadow: 0 8.55px 25.65px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .teaching-icon {
+            font-size: 4.275rem;
+            margin-bottom: 1.71rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8.55px);
+            }
+        }
+
+        .landing-title {
+            font-size: 2.1375rem;
+            color: #223859;
+            margin-bottom: 1.2825rem;
+            font-weight: 600;
+        }
+
+        .landing-description {
+            font-size: 0.9405rem;
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 2.565rem;
+            text-align: left;
+        }
+
+        .landing-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.71rem;
+            flex-wrap: wrap;
+        }
+
+        .landing-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4275rem;
+            padding: 0.855rem 1.71rem;
+            background: #587eb7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8.55px;
+            font-size: 0.9405rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 3.42px 12.825px rgba(88, 126, 183, 0.3);
+        }
+
+        .landing-link:hover {
+            background: #4a6ba0;
+            transform: translateY(-1.71px);
+            box-shadow: 0 5.13px 17.1px rgba(88, 126, 183, 0.4);
+            text-decoration: none;
+        }
+
+        .landing-link emoji {
+            font-size: 1.2825rem;
+        }
+
+        @media (max-width: 768px) {
+            .landing-content {
+                padding: 1.71rem;
+            }
+
+            .landing-title {
+                font-size: 1.71rem;
+            }
+
+            .teaching-icon {
+                font-size: 3.42rem;
+            }
+
+            .landing-links {
+                flex-direction: column;
+                gap: 0.855rem;
+            }
+
+            .landing-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-page">
+        <div class="landing-content">
+            <div class="teaching-icon">
+                👨‍🏫
+            </div>
+            
+            <h1 class="landing-title">Dialogs with Personality-Aware Teaching Strategies</h1>
+            
+            <div class="landing-description">
+                <p>Recent advances in large language models (LLMs) demonstrate their potential as educational tutors. However, different tutoring strategies benefit different student personalities, and mismatches can be counterproductive to student outcomes. Despite this, current LLM tutoring systems do not take into account student personality traits.
+                    To address this problem, we first construct a taxonomy that links pedagogical methods to personality profiles, based on pedagogical literature. We simulate student-teacher conversations and use our framework to let the LLM tutor adjust its strategy to the simulated student personality. 
+                    We evaluate the scenario with human teachers and find that they consistently prefer our approach over two baselines. Our method also increases the use of less common, high-impact strategies such as role-playing, which human and LLM annotators prefer significantly. 
+                    Our findings pave the way for developing more personalized and effective LLM use in educational applications.</p>
+            </div>
+            
+            <div class="landing-links">
+                <a href="https://aclanthology.org/people/donya-rooein/" class="landing-link" target="_blank">
+                    <emoji>📄</emoji>
+                    <span>Paper</span>
+                </a>
+                <a href="https://aclanthology.org/people/donya-rooein/" class="landing-link" target="_blank">
+                    <emoji>💻</emoji>
+                    <span>Code</span>
+                </a>
+                <a href="demo.html" class="landing-link">
+                    <emoji>🎮</emoji>
+                    <span>Demo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
