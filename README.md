@@ -12,11 +12,6 @@ This repository contains code, analysis artifacts, and a demo for **PATS**, a re
 - [Repository structure](#repository-structure)
 - [Setup](#setup)
 - [Reproducing analyses](#reproducing-analyses)
-- [Demo / GitHub Pages](#demo--github-pages)
-- [Citation](#citation)
-- [License](#license)
-- [Contact](#contact)
-
 ---
 
 ## Project overview
@@ -49,5 +44,7 @@ This repository contains code, analysis artifacts, and a demo for **PATS**, a re
 ```bash
 git clone https://github.com/donya-rooein/PATS.git
 cd PATS
+
+
 
 
