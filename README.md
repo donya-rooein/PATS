@@ -10,8 +10,7 @@ This repository contains code, analysis artifacts, and a demo for **PATS**, a re
 
 - [Project overview](#project-overview)
 - [Repository structure](#repository-structure)
-- [Setup](#setup)
-- [Reproducing analyses](#reproducing-analyses)
+
 ---
 
 ## Project overview
@@ -35,16 +34,5 @@ This repository contains code, analysis artifacts, and a demo for **PATS**, a re
 
 - `Demo/`  
   Code (HTML/CSS/JS) for demo / project page to explore the simulated dialogs.
-
----
-
-## Setup
-
-### 1) Clone the repository
-```bash
-git clone https://github.com/donya-rooein/PATS.git
-cd PATS
-
-
 
 
